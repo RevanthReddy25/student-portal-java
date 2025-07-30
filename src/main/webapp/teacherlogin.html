@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Teacher Login Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-image: repeating-linear-gradient(0deg, rgb(6, 6, 6) 0px, rgb(6, 6, 6) 1px,transparent 1px, transparent 21px),repeating-linear-gradient(90deg, rgb(6, 6, 6) 0px, rgb(6, 6, 6) 1px,transparent 1px, transparent 21px),linear-gradient(90deg, hsl(144,0%,9%),hsl(144,0%,9%));
+		}
+		.container {
+			width: 300px;
+			background-color: #232D3F;;
+			padding: 20px;
+			margin: 0 auto;
+			margin-top: 100px;
+			border-radius: 4px;
+			box-shadow: 0px 0px 10px rgb(254, 254, 254);
+		}
+		.container h1 {
+			text-align: center;
+			margin-bottom: 20px;
+			color: white;
+		}
+		.container label {
+			display: block;
+			margin-bottom: 10px;
+			color: white;
+		}
+		.container input[type="text"],
+		.container input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+		}
+		.container select,
+		.container input[type="text"],
+		.container input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+		}
+		.container button {
+			width: 100%;
+			padding: 10px;
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		.container button:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Teacher Login</h1>
+		<form id="loginForm" action="Teacherservlet" method="post">
+			<label for="teacher_id">Course ID:</label>
+			<select id="teacher_id" name="teacher_id">
+				<option value="cs251">CS251</option>
+				<option value="cs252">CS252</option>
+				<option value="cs253">CS253</option>
+				<option value="cs254">CS254</option>
+				<option value="cs255">CS255</option>
+				<option value="cs256">CS256</option>
+				<option value="cs257">CS257</option>
+			</select>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+			<button type="submit">Login</button>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NITAP PORTAL</title>
+    <style>
+       body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
+            margin: 0;
+            background-image: repeating-linear-gradient(0deg, rgb(6, 6, 6) 0px, rgb(6, 6, 6) 1px,transparent 1px, transparent 21px),repeating-linear-gradient(90deg, rgb(6, 6, 6) 0px, rgb(6, 6, 6) 1px,transparent 1px, transparent 21px),linear-gradient(90deg, hsl(144,0%,9%),hsl(144,0%,9%));
+            background-color: cover;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+        }
+        .image {
+            width: 50%;
+            height: 100vh;
+      
+        }
+        .login {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color:#EEEEEE;
+        }
+        .btn {
+            display: block;
+            background-color: #008170; 
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px auto;
+        }
+        .btn:hover {
+            background-color: #ffffff;
+            color:black;
+        }
+        .signup-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .signup-btn:hover {
+            background-color: #e65c00;
+        }
+        .signup-btn1 {
+            position: absolute;
+            top: 20px;
+            right: 190px;
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .signup-btn1:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+<body>
+    <a href="teachersignup.html" class="signup-btn">Teacher Signup</a>
+    <a href="studentsignup.html" class="signup-btn1">Student Signup</a>
+    
+    <div class="container">
+        <div class="image" ><img src="">
+        </div>
+        <div class="login">
+            <p style="font-size: 5vw">Welcome!!</p>
+            <h2>TO<br>National Institute of Technology Andhra Pradesh</h2>
+            <p>Select the login options</p>
+            <a href="studentlogin.html" class="btn"><b>STUDENT</b></a>
+            <a href="teacherlogin.html" class="btn"><b>TEACHER</b></a>
+        </div>
+    </div>
+</body>
+</html>
